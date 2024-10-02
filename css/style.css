@@ -1,0 +1,160 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ECF0F1;
+    color: #2D2D2D;
+}
+
+header {
+    background-color: #2C3E50; /* Dark navy blue for header */
+    padding: 15px;
+}
+
+header nav {
+    background-color: #2C3E50; /* Same as header for a cohesive look */
+    padding: 10px;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: #ECF0F1; /* Light gray for nav links */
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+header nav ul li a:hover {
+    color: #3498DB; /* Bright blue on hover for contrast */
+}
+
+.hero {
+    text-align: center;
+    padding: 50px;
+    color: #FFFFFF;
+    background-color: #34495E; 
+}
+
+.cta-button {
+    padding: 10px 20px;
+    background-color: #E67E22;
+    color: #FFFFFF;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.cta-button:hover {
+    background-color: #E74C3C;
+}
+.news {
+    text-align: center; /* Center align the container */
+    margin: 20px 0; /* Add margin for spacing */
+}
+
+.news input {
+    margin: 10px 0;
+    padding: 10px;
+    width: calc(70% - 22px);
+    background-color: #FFFFFF;
+    border: 1px solid #95A5A6;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+}
+
+.news button {
+    margin-top: 10px; /* Add margin to space it from the input */
+    padding: 10px 20px;
+    background-color: #E67E22;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.news button:hover {
+    background-color: #E74C3C;
+    transform: translateY(-2px);
+}
+
+#newsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+#newsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.article {
+    border: 1px solid whitesmoke;
+    margin: 10px;
+    padding: 20px;
+    width: calc(30% - 20px);
+    background-color: #58738e;
+    color: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.article:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.article h2 {
+    font-size: 1.5em;
+    margin: 0 0 10px;
+    color: #2C3E50;
+}
+
+.article p {
+    font-size: 1em;
+    margin: 0 0 15px;
+    color: #2D2D2D;
+}
+
+.article a {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #E67E22;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.article a:hover {
+    text-decoration: underline;
+    color: #E67E22;
+}
+
+
+a {
+    color: #3498DB;
+}
+article{
+    background-color: #3498DB;
+
+}
