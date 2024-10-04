@@ -57,8 +57,7 @@ function fetchNews(query) {
                 let articleDiv = document.createElement('div');
                 articleDiv.className = 'article';
 
-                // Limit the description to a maximum of 100 characters
-                const maxDescriptionLength = 100;
+                                const maxDescriptionLength = 100;
                 const truncatedDescription = article.description 
                     ? (article.description.length > maxDescriptionLength 
                         ? article.description.substring(0, maxDescriptionLength) + '...' 
