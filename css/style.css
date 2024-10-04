@@ -1,3 +1,4 @@
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -7,58 +8,43 @@ body {
 }
 
 header {
-    background-color: #2C3E50; 
+    background-color: #2C3E50;
     padding: 15px;
-}
-
-header nav {
-    background-color: #2C3E50; 
-    padding: 10px;
 }
 
 header nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
+    text-align: center;
 }
 
 header nav ul li {
-    display: inline;
+    display: inline-block;
     margin-right: 20px;
 }
 
 header nav ul li a {
-    color: #ECF0F1; 
+    color: #ECF0F1;
     text-decoration: none;
     font-weight: bold;
     font-size: 16px;
 }
 
 header nav ul li a:hover {
-    color: #3498DB; 
+    color: #3498DB;
 }
 
 .hero {
     text-align: center;
     padding: 50px;
     color: #FFFFFF;
-    background-color: #34495E; 
+    background-color: #34495E;
 }
 
-.cta-button {
-    padding: 10px 20px;
-    background-color: #E67E22;
-    color: #FFFFFF;
-    text-decoration: none;
-    border-radius: 5px;
-}
-
-.cta-button:hover {
-    background-color: #E74C3C;
-}
 .news {
     text-align: center;
-    margin: 20px 0; 
+    margin: 20px 0;
 }
 
 .news input {
@@ -73,7 +59,7 @@ header nav ul li a:hover {
 }
 
 .news button {
-    margin-top: 10px; 
+    margin-top: 10px;
     padding: 10px 20px;
     background-color: #E67E22;
     color: #FFFFFF;
@@ -90,12 +76,6 @@ header nav ul li a:hover {
     transform: translateY(-2px);
 }
 
-#newsContainer {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    padding: 20px;
-}
 #newsContainer {
     display: flex;
     flex-wrap: wrap;
@@ -144,73 +124,12 @@ header nav ul li a:hover {
     font-size: 16px;
     transition: background-color 0.3s, transform 0.2s;
 }
-.about{
-    text-align: center;
-    background-color: #34495E; 
-    padding: 20px;
-    margin: 20px;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.about h2 {
-    color:rgb(90, 194, 222);
-}
-
-.about p {
-    color:whitesmoke;
-    line-height: 1.6;
-    padding: 10px;
-}
-
-
-.about p {
-    color:whitesmoke;
-    line-height: 1.6;
-    margin: 5px 0;
-}
-
 
 .article a:hover {
-    text-decoration: underline;
-    color: #E67E22;
-}
-
-
-a {
-    color: #3498DB;
-}
-article{
-    background-color: #3498DB;
-
-}
-.instructions {
-    background-color: #34495E; 
-    padding: 20px;
-    margin: 20px auto;
-    text-align: center;
-    border-radius: 10px;
-    max-width: 800px;
-}
-
-.instructions h2 {
-    color:white;
-    margin-bottom: 10px;
-}
-
-.instructions p {
-    color: white;
-    font-size: 1.2em;
-}
-
-.instructions a {
-    color: #E67E22;
-    text-decoration: none;
-}
-
-.instructions a:hover {
+    background-color: #E74C3C;
     text-decoration: underline;
 }
+
 footer {
     background-color: #333;
     padding: 20px 0;
@@ -218,8 +137,28 @@ footer {
     margin-top: 40px;
 }
 
+.footer-rights {
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    border-top: 1px solid #444;
+    margin-top: 20px;
+}
+
+.developer-name {
+    font-weight: bold;
+    color: #3498DB;
+    text-transform: uppercase;
+    font-size: 1em;
+    letter-spacing: 1px;
+}
+
 .social-media-bar {
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .social-icon {
@@ -232,32 +171,43 @@ footer {
 .social-icon:hover {
     color: #3498DB;
 }
-.footer-rights {
-    margin-top: 20px;
-    font-size: 0.9em;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-    border-top: 1px solid #444; 
-    margin-top: 20px;
+
+/* RESPONSIVE STYLES */
+
+@media (max-width: 768px) {
+    header nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .article {
+        width: calc(45% - 20px);
+    }
+
+    .news input {
+        width: calc(90% - 22px);
+    }
 }
 
-.developer-name {
-    font-weight: bold;
-    color: #3498DB; 
-    text-transform: uppercase;
-    font-size: 1em;
-    letter-spacing: 1px;
+@media (max-width: 480px) {
+    .article {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .news input {
+        width: calc(100% - 22px);
+    }
+
+    .news button {
+        width: 100%;
+    }
+
+    .hero {
+        padding: 30px 20px;
+    }
+
+    footer {
+        padding: 10px 0;
+    }
 }
-
-footer {
-    background-color: #333;
-    padding: 30px 0;
-}
-
-.footer-rights:hover .developer-name {
-    color: #E67E22; 
-}
-
-
-
